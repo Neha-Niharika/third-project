@@ -1,6 +1,9 @@
+import Btn from "./components/Btn";
 import FruitDisplay from "./components/FruitDisplay";
 import Header from "./components/Header";
 import Main from "./components/Main";
+import MoodHandler from "./components/MoodHandler";
+import ParentChild from "./components/ParentChild";
 import Sidebar from "./components/Sidebar";
 import UserProfile from "./components/UserProfile";
 
@@ -16,6 +19,12 @@ function App() {
       <UserProfile name="Sam" isMember={true} />
       <UserProfile name="Ram" isMember={false} />
       <FruitDisplay fruits={fruit} />
+      <br></br>
+      <Btn />
+      <MoodHandler />
+      <ParentChild heading="80% Off" callToAction="Everything Must Go" />
+      <br />
+      <ParentChild heading="70% Off" callToAction="Everything Must Go" />
     </>
   );
 }
