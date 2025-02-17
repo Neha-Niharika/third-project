@@ -1,8 +1,10 @@
+import FruitDisplay from "./components/FruitDisplay";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Sidebar from "./components/Sidebar";
 import UserProfile from "./components/UserProfile";
 
+const fruit: string[] = [];
 function App() {
   return (
     <>
@@ -13,6 +15,7 @@ function App() {
       <Sidebar />
       <UserProfile name="Sam" isMember={true} />
       <UserProfile name="Ram" isMember={false} />
+      <FruitDisplay fruits={fruit} />
     </>
   );
 }
