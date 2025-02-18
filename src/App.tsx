@@ -6,6 +6,7 @@ import MoodHandler from "./components/MoodHandler";
 import ParentChild from "./components/ParentChild";
 import Sidebar from "./components/Sidebar";
 import UserProfile from "./components/UserProfile";
+import ShowHideText from "./components/ShowHideText";
 
 const fruit: string[] = [];
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <ParentChild heading="80% Off" callToAction="Everything Must Go" />
       <br />
       <ParentChild heading="70% Off" callToAction="Everything Must Go" />
+      <ShowHideText />
     </>
   );
 }
